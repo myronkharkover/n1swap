@@ -153,19 +153,11 @@ export function PriceChart({ fromToken, toToken, className }: PriceChartProps) {
               }}
             />
             
-            {/* Area for gradient fill underneath */}
+            {/* Use only the Area component with the stroke property to combine line and area */}
             <Area
               type="monotone"
               dataKey="price"
               fill="url(#purpleGradient)"
-              stroke="none"
-              isAnimationActive={true}
-            />
-            
-            {/* Solid line on top */}
-            <Line 
-              type="monotone" 
-              dataKey="price" 
               stroke={purpleLineColor}
               strokeWidth={2}
               dot={false}
