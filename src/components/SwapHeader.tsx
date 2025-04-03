@@ -34,7 +34,7 @@ export function SwapHeader({
   return (
     <motion.div variants={itemVariants} className="flex justify-between items-center mb-6">
       <h1 className={cn("text-2xl tracking-tighter font-medium font-['Satoshi']", theme === "dark" ? "text-white dark:text-purple-200" : "text-purple-800")}>
-        N1 Swap
+        AMM Swap
       </h1>
       <SlippageSelector 
         showMenu={showSlippageMenu} 

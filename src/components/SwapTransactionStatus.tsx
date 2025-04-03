@@ -327,7 +327,7 @@ export function SwapTransactionStatus({
                   
                   {showParticles && (
                     <div className="absolute inset-0 z-0 overflow-hidden">
-                      {Array.from({ length: 12 }).map((_, i) => (
+                      {Array.from({ length: 120 }).map((_, i) => (
                         <motion.div
                           key={i}
                           className="absolute w-6 h-6 object-contain"
